@@ -15,7 +15,7 @@ You can test the contract by generating on-chain avatars. Simply query the `mult
 
 ## Development
 
-Solidity programming language and its development environment is very different from JavaScript, PHP, or Python, in which Multiavatar was implemented previously. That is why a lot of Multiavatar methods and logic were rewritten in different ways. While previously rewriting Multiavatar from JavaScript to PHP and Python was straightforward, achieving the same in Solidity was very different and challenging.
+The Solidity programming language and its development environment are very different from JavaScript, PHP, or Python, in which Multiavatar was previously implemented. That is why significant portions of the Multiavatar code in Solidity needed to be rewritten in completely different ways.
 
 While the Multiavatar generator is designed to be lightweight (69 KB) in a web environment, due to the limited space available on the Ethereum blockchain, the resulting smart contract is very large in Ethereum terms. Although the combined size of source materials (SVG image shapes and color themes) is only around 60 KB in plain text, they need to be presented as string arrays in the Solidity code in order to be looped through during an avatar generation. This inclusion of string arrays in the contract makes it expensive to deploy. Additionally, the contract needs to be divided into separate contracts that inject themes and SVG shapes data into the main contract, as the full contract would otherwise exceed the size limits imposed by the Ethereum blockchain.
 
