@@ -59,7 +59,7 @@ If you have deployed the contract on your local Hardhat blockchain, you can inte
 
 - Commands for testing the injected SVG code and themes:  
 `await mnft.getThemes('00','A','env')`  
-`await mnft.getParts('00', 'env')`'
+`await mnft.getParts('00', 'env')`
 
 - Lock the contract after injecting all SVG code and themes:  
 `await mnft.lockGen()`
